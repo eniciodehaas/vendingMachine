@@ -15,6 +15,12 @@ public class Main {
         String[] vendingAntwoorden = new String[15];
         while (geld >= 0.85){
             
+            System.out.println("Je hebt nog €" +geld+",-");
+
+
+            //eten of drinken
+            System.out.println(vendingVragen[0]);
+            vendingAntwoorden[0] = scan.next();
         }
 
     }
