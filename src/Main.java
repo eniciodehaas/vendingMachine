@@ -298,6 +298,40 @@ public class Main {
                         System.out.println(vendingVragen[7]);
                         vendingAntwoorden[7] = scan.next();
 
+                        if (vendingAntwoorden[7].equals("met")){
+                            if (geld >= 1.5){
+                                System.out.println("   _____      _       \n" +
+                                        "  / ____|    | |      \n" +
+                                        " | |     ___ | | __ _ \n" +
+                                        " | |    / _ \\| |/ _` |\n" +
+                                        " | |___| (_) | | (_| |\n" +
+                                        "  \\_____\\___/|_|\\__,_|\n" +
+                                        "                      \n" +
+                                        "                      ");
+                                geld = geld - 1.5;
+                            }else {
+                                geenGeld();
+                            }
+
+                        }else if (vendingAntwoorden[7].equals("zonder")){
+                            if (geld >= 1.2){
+                                System.out.println("  _      _                                 _      \n" +
+                                        " | |    (_)                               | |     \n" +
+                                        " | |     _ _ __ ___   ___  _ __   __ _  __| | ___ \n" +
+                                        " | |    | | '_ ` _ \\ / _ \\| '_ \\ / _` |/ _` |/ _ \\\n" +
+                                        " | |____| | | | | | | (_) | | | | (_| | (_| |  __/\n" +
+                                        " |______|_|_| |_| |_|\\___/|_| |_|\\__,_|\\__,_|\\___|\n" +
+                                        "                                                  \n" +
+                                        "                                                  ");
+                                geld = geld - 1.2;
+                            }else {
+                                geenGeld();
+                            }
+
+                        }else {
+                            System.out.println("ongeldige input");
+                        }
+
 
                     }
 
