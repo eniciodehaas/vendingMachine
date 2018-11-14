@@ -13,7 +13,9 @@ public class Main {
 
         //antwoorden
         String[] vendingAntwoorden = new String[15];
-
+        while (geld >= 0.85){
+            
+        }
 
     }
 
