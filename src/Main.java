@@ -9,7 +9,7 @@ public class Main {
         double geld = 20;
 
         //vragen
-        String[] vendingVragen = { "Wil je iets eten of drinken?", "Warm of koud?", "Zoet of Hartig?","Gezond of Ongezond?", "met of zonder alcohol?"};
+        String[] vendingVragen = { "Wil je iets eten of drinken?", "Warm of koud?", "Zoet of Hartig?","Gezond of Ongezond?", "met of zonder alcohol?", "met of zonder koffie?", "bier of wijn?", "met of zonder prik?"};
 
         //antwoorden
         String[] vendingAntwoorden = new String[15];
@@ -25,7 +25,7 @@ public class Main {
 
 
             //als het eten is
-            if (vendingAntwoorden[0].equals("eten")){
+            if (vendingAntwoorden[0].equals("eten")) {
 
 
                 System.out.println(vendingVragen[1]);
@@ -38,8 +38,7 @@ public class Main {
                 vendingAntwoorden[3] = scan.next();
 
 
-
-                if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))){
+                if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))) {
                     if (geld >= 2.50) {
 
                         System.out.println("      _               __                      _   _           \n" +
@@ -51,13 +50,13 @@ public class Main {
                                 "                        | |                     _/ |          \n" +
                                 "                        |_|                    |__/           ");
                         geld = geld - 2.50;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))) {
-                    if (geld >=1.80){
+                } else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))) {
+                    if (geld >= 1.80) {
                         System.out.println("   _____                      _        \n" +
                                 "  / ____|                    | |       \n" +
                                 " | |    _   _ _ __   ___ __ _| | _____ \n" +
@@ -67,15 +66,13 @@ public class Main {
                                 "             | |                       \n" +
                                 "             |_|                       ");
                         geld = geld - 1.80;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-
-
-                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))){
-                    if (geld >= 3.45){
+                } else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))) {
+                    if (geld >= 3.45) {
                         System.out.println("   _____           _                            _                                     _             \n" +
                                 "  / ____|         | |                          | |                                   | |            \n" +
                                 " | |  __  ___  ___| |_ ___   ___  _ __ ___   __| | ___      __ _ _ __ ___   ___ _ __ | |_ ___ _ __  \n" +
@@ -85,14 +82,13 @@ public class Main {
                                 "                                                            __/ |                                   \n" +
                                 "                                                           |___/                                    ");
                         geld = geld - 3.45;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-
-                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))){
-                    if (geld>=1.50){
+                } else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))) {
+                    if (geld >= 1.50) {
                         System.out.println("  _  __          _        _   \n" +
                                 " | |/ /         | |      | |  \n" +
                                 " | ' / _ __ ___ | | _____| |_ \n" +
@@ -100,12 +96,12 @@ public class Main {
                                 " | . \\| | | (_) |   <  __/ |_ \n" +
                                 " |_|\\_\\_|  \\___/|_|\\_\\___|\\__|");
                         geld = geld - 1.50;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))){
+                } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))) {
                     if (geld >= 1.75) {
                         System.out.println("  ______          _ _             _           _      \n" +
                                 " |  ____|        (_) |           | |         | |     \n" +
@@ -117,13 +113,12 @@ public class Main {
                                 "                                                     ");
                         geld = geld - 1.75;
 
-                    }
-                    else{
+                    } else {
                         geenGeld();
                     }
 
-                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))){
-                    if (geld >= 0.85){
+                } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))) {
+                    if (geld >= 0.85) {
                         System.out.println("  ____        _    _                  \n" +
                                 " |  _ \\      | |  | |                 \n" +
                                 " | |_) | __ _| | _| | __ ___   ____ _ \n" +
@@ -133,13 +128,13 @@ public class Main {
                                 "                                      \n" +
                                 "                                      ");
                         geld = geld - 0.80;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))){
-                    if (geld>= 1.40){
+                } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))) {
+                    if (geld >= 1.40) {
                         System.out.println("   _____                        _                              _   _           \n" +
                                 "  / ____|                      | |                            | | (_)          \n" +
                                 " | (___  _ __   ___   ___ _ __ | |_ ___  _ __ ___   __ _  __ _| |_ _  ___  ___ \n" +
@@ -149,12 +144,12 @@ public class Main {
                                 "                         | |                                     _/ |          \n" +
                                 "                         |_|                                    |__/           ");
                         geld = geld - 1.40;
-                    }else {
+                    } else {
                         geenGeld();
                     }
 
-                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))){
-                    if (geld >= 0.90){
+                } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))) {
+                    if (geld >= 0.90) {
                         System.out.println("  ______     _    _    _         _____ _     _           \n" +
                                 " |___  /    | |  | |  (_)       / ____| |   (_)          \n" +
                                 "    / / __ _| | _| | ___  ___  | |    | |__  _ _ __  ___ \n" +
@@ -164,16 +159,84 @@ public class Main {
                                 "                                              | |        \n" +
                                 "                                              |_|        ");
                         geld = geld - 0.90;
-                    }else{
+                    } else {
                         geenGeld();
                     }
 
 
-                }else{
+                } else {
                     System.out.println("ongeldige input");
                 }
 
-                
+
+
+            //als het drinken is
+            }else if (vendingAntwoorden[0].equals("drinken")) {
+
+                    System.out.println(vendingVragen[1]);
+                    vendingAntwoorden[1] = scan.next();
+
+                    System.out.println(vendingVragen[4]);
+                    vendingAntwoorden[4] = scan.next();
+
+
+                    if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[4].equals("met"))) {
+                        System.out.println(vendingVragen[5]);
+                        vendingAntwoorden[5] = scan.next();
+
+                        if (vendingAntwoorden[5].equals("met")){
+                            if (geld >= 4.50) {
+                                System.out.println("");
+                                geld = geld - 4.50;
+                            }else{
+                                geenGeld();
+                            }
+
+                        }else if (vendingAntwoorden[5].equals("zonder")){
+                            if (geld >= 3.25){
+                                System.out.println();
+                                geld = geld - 3.25;
+                            }else {
+                                geenGeld();
+                            }
+                        }
+
+
+                    } else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[4].equals("zonder"))) {
+                        System.out.println(vendingVragen[5]);
+                        vendingAntwoorden[5] = scan.next();
+
+                        if (vendingAntwoorden[5].equals("met")){
+                            if (geld >= 1) {
+                                System.out.println("");
+                                geld = geld - 1;
+                            }else{
+                                geenGeld();
+                            }
+
+                        }else if (vendingAntwoorden[5].equals("zonder")){
+                            if (geld >= 1){
+                                System.out.println();
+                                geld = geld - 1;
+                            }else {
+                                geenGeld();
+                            }
+                        }
+
+
+                    } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[4].equals("met"))) {
+                        System.out.println(vendingVragen[6]);
+                        vendingAntwoorden[6] = scan.next();
+
+
+                    } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[4].equals("zonder"))) {
+                        System.out.println(vendingVragen[7]);
+                        vendingAntwoorden[7] = scan.next();
+
+
+                    }
+
+
             }
         }
 
