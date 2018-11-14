@@ -249,12 +249,49 @@ public class Main {
                             }else {
                                 geenGeld();
                             }
+
+                        }else{
+                            System.out.println("ongeldige input");
                         }
 
 
                     } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[4].equals("met"))) {
                         System.out.println(vendingVragen[6]);
                         vendingAntwoorden[6] = scan.next();
+
+                        if (vendingAntwoorden[6].equals("bier")){
+                            if (geld >= 2.25){
+                                System.out.println("  ____  _           \n" +
+                                        " |  _ \\(_)          \n" +
+                                        " | |_) |_  ___ _ __ \n" +
+                                        " |  _ <| |/ _ \\ '__|\n" +
+                                        " | |_) | |  __/ |   \n" +
+                                        " |____/|_|\\___|_|   \n" +
+                                        "                    \n" +
+                                        "                    ");
+                                geld = geld - 2.25;
+                            }else {
+                                geenGeld();
+                            }
+
+                        }else if (vendingAntwoorden[6].equals("wijn")){
+                            if (geld >= 3){
+                                System.out.println(" __          ___ _       \n" +
+                                        " \\ \\        / (_|_)      \n" +
+                                        "  \\ \\  /\\  / / _ _ _ __  \n" +
+                                        "   \\ \\/  \\/ / | | | '_ \\ \n" +
+                                        "    \\  /\\  /  | | | | | |\n" +
+                                        "     \\/  \\/   |_| |_| |_|\n" +
+                                        "               _/ |      \n" +
+                                        "              |__/       ");
+                                geld = geld - 3;
+                            }else {
+                                geenGeld();
+                            }
+
+                        }else {
+                            System.out.println("ongeldige input");
+                        }
 
 
                     } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[4].equals("zonder"))) {
