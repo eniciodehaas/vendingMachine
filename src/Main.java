@@ -9,18 +9,20 @@ public class Main {
         double geld = 20;
 
         //vragen
-        String[] vendingVragen = {"Wil je iets eten of drinken?", "Warm of koud?", "Zoet of Hartig?", "Gezond of Ongezond?", "met of zonder alcohol?"};
+        String[] vendingVragen = { "Wil je iets eten of drinken?", "Warm of koud?", "Zoet of Hartig?","Gezond of Ongezond?", "met of zonder alcohol?"};
 
         //antwoorden
         String[] vendingAntwoorden = new String[15];
+
+
         while (geld >= 0.85){
 
+
             System.out.println("Je hebt nog €" +geld+",-");
-
-
             //eten of drinken
             System.out.println(vendingVragen[0]);
             vendingAntwoorden[0] = scan.next();
+
 
             //als het eten is
             if (vendingAntwoorden[0].equals("eten")){
@@ -34,8 +36,154 @@ public class Main {
 
                 System.out.println(vendingVragen[3]);
                 vendingAntwoorden[3] = scan.next();
+
+
+
+                if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))){
+                    if (geld >= 2.50) {
+
+                        System.out.println("      _               __                      _   _           \n" +
+                                "     | |             / _|                    | | (_)          \n" +
+                                "  ___| |_ ___   ___ | |_ _ __   ___  ___ _ __| |_ _  ___  ___ \n" +
+                                " / __| __/ _ \\ / _ \\|  _| '_ \\ / _ \\/ _ \\ '__| __| |/ _ \\/ __|\n" +
+                                " \\__ \\ || (_) | (_) | | | |_) |  __/  __/ |  | |_| |  __/\\__ \\\n" +
+                                " |___/\\__\\___/ \\___/|_| | .__/ \\___|\\___|_|   \\__| |\\___||___/\n" +
+                                "                        | |                     _/ |          \n" +
+                                "                        |_|                    |__/           ");
+                        geld = geld - 2.50;
+                    }else{
+                        geenGeld();
+                    }
+
+
+                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))) {
+                    if (geld >=1.80){
+                        System.out.println("   _____                      _        \n" +
+                                "  / ____|                    | |       \n" +
+                                " | |    _   _ _ __   ___ __ _| | _____ \n" +
+                                " | |   | | | | '_ \\ / __/ _` | |/ / _ \\\n" +
+                                " | |___| |_| | |_) | (_| (_| |   <  __/\n" +
+                                "  \\_____\\__,_| .__/ \\___\\__,_|_|\\_\\___|\n" +
+                                "             | |                       \n" +
+                                "             |_|                       ");
+                        geld = geld - 1.80;
+                    }else{
+                        geenGeld();
+                    }
+
+
+
+
+                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))){
+                    if (geld >= 3.45){
+                        System.out.println("   _____           _                            _                                     _             \n" +
+                                "  / ____|         | |                          | |                                   | |            \n" +
+                                " | |  __  ___  ___| |_ ___   ___  _ __ ___   __| | ___      __ _ _ __ ___   ___ _ __ | |_ ___ _ __  \n" +
+                                " | | |_ |/ _ \\/ __| __/ _ \\ / _ \\| '_ ` _ \\ / _` |/ _ \\    / _` | '__/ _ \\ / _ \\ '_ \\| __/ _ \\ '_ \\ \n" +
+                                " | |__| |  __/\\__ \\ || (_) | (_) | | | | | | (_| |  __/   | (_| | | | (_) |  __/ | | | ||  __/ | | |\n" +
+                                "  \\_____|\\___||___/\\__\\___/ \\___/|_| |_| |_|\\__,_|\\___|    \\__, |_|  \\___/ \\___|_| |_|\\__\\___|_| |_|\n" +
+                                "                                                            __/ |                                   \n" +
+                                "                                                           |___/                                    ");
+                        geld = geld - 3.45;
+                    }else{
+                        geenGeld();
+                    }
+
+
+
+                }else if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))){
+                    if (geld>=1.50){
+                        System.out.println("  _  __          _        _   \n" +
+                                " | |/ /         | |      | |  \n" +
+                                " | ' / _ __ ___ | | _____| |_ \n" +
+                                " |  < | '__/ _ \\| |/ / _ \\ __|\n" +
+                                " | . \\| | | (_) |   <  __/ |_ \n" +
+                                " |_|\\_\\_|  \\___/|_|\\_\\___|\\__|");
+                        geld = geld - 1.50;
+                    }else{
+                        geenGeld();
+                    }
+
+
+                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))){
+                    if (geld >= 1.75) {
+                        System.out.println("  ______          _ _             _           _      \n" +
+                                " |  ____|        (_) |           | |         | |     \n" +
+                                " | |__ _ __ _   _ _| |_ ___  __ _| | __ _  __| | ___ \n" +
+                                " |  __| '__| | | | | __/ __|/ _` | |/ _` |/ _` |/ _ \\\n" +
+                                " | |  | |  | |_| | | |_\\__ \\ (_| | | (_| | (_| |  __/\n" +
+                                " |_|  |_|   \\__,_|_|\\__|___/\\__,_|_|\\__,_|\\__,_|\\___|\n" +
+                                "                                                     \n" +
+                                "                                                     ");
+                        geld = geld - 1.75;
+
+                    }
+                    else{
+                        geenGeld();
+                    }
+
+                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("ongezond")))){
+                    if (geld >= 0.85){
+                        System.out.println("  ____        _    _                  \n" +
+                                " |  _ \\      | |  | |                 \n" +
+                                " | |_) | __ _| | _| | __ ___   ____ _ \n" +
+                                " |  _ < / _` | |/ / |/ _` \\ \\ / / _` |\n" +
+                                " | |_) | (_| |   <| | (_| |\\ V / (_| |\n" +
+                                " |____/ \\__,_|_|\\_\\_|\\__,_| \\_/ \\__,_|\n" +
+                                "                                      \n" +
+                                "                                      ");
+                        geld = geld - 0.80;
+                    }else{
+                        geenGeld();
+                    }
+
+
+                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))){
+                    if (geld>= 1.40){
+                        System.out.println("   _____                        _                              _   _           \n" +
+                                "  / ____|                      | |                            | | (_)          \n" +
+                                " | (___  _ __   ___   ___ _ __ | |_ ___  _ __ ___   __ _  __ _| |_ _  ___  ___ \n" +
+                                "  \\___ \\| '_ \\ / _ \\ / _ \\ '_ \\| __/ _ \\| '_ ` _ \\ / _` |/ _` | __| |/ _ \\/ __|\n" +
+                                "  ____) | | | | (_) |  __/ |_) | || (_) | | | | | | (_| | (_| | |_| |  __/\\__ \\\n" +
+                                " |_____/|_| |_|\\___/ \\___| .__/ \\__\\___/|_| |_| |_|\\__,_|\\__,_|\\__| |\\___||___/\n" +
+                                "                         | |                                     _/ |          \n" +
+                                "                         |_|                                    |__/           ");
+                        geld = geld - 1.40;
+                    }else {
+                        geenGeld();
+                    }
+
+                }else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))){
+                    if (geld >= 0.90){
+                        System.out.println("  ______     _    _    _         _____ _     _           \n" +
+                                " |___  /    | |  | |  (_)       / ____| |   (_)          \n" +
+                                "    / / __ _| | _| | ___  ___  | |    | |__  _ _ __  ___ \n" +
+                                "   / / / _` | |/ / |/ / |/ _ \\ | |    | '_ \\| | '_ \\/ __|\n" +
+                                "  / /_| (_| |   <|   <| |  __/ | |____| | | | | |_) \\__ \\\n" +
+                                " /_____\\__,_|_|\\_\\_|\\_\\_|\\___|  \\_____|_| |_|_| .__/|___/\n" +
+                                "                                              | |        \n" +
+                                "                                              |_|        ");
+                        geld = geld - 0.90;
+                    }else{
+                        geenGeld();
+                    }
+
+
+                }else{
+                    System.out.println("ongeldige input");
+                }
+
+                
+            }
         }
 
+        System.out.println("je hebt niet genoeg geld meer om iets te kopen, fijne dag!");
+
+
+    }
+
+    public static void geenGeld(){
+        System.out.println("Je hebt niet genoeg geld meer");
     }
 
 }
