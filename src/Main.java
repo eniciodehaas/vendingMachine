@@ -39,7 +39,7 @@ public class Main {
 
 
                 if (vendingAntwoorden[1].equals("warm") && (vendingAntwoorden[2].equals("zoet") && (vendingAntwoorden[3].equals("gezond")))) {
-                    if (geld >= 2.50) {
+                    if (geld >= 2.5) {
 
                         System.out.println("      _               __                      _   _           \n" +
                                 "     | |             / _|                    | | (_)          \n" +
@@ -49,7 +49,7 @@ public class Main {
                                 " |___/\\__\\___/ \\___/|_| | .__/ \\___|\\___|_|   \\__| |\\___||___/\n" +
                                 "                        | |                     _/ |          \n" +
                                 "                        |_|                    |__/           ");
-                        geld = geld - 2.50;
+                        geld = geld - 2.5;
                     } else {
                         geenGeld();
                     }
@@ -127,14 +127,14 @@ public class Main {
                                 " |____/ \\__,_|_|\\_\\_|\\__,_| \\_/ \\__,_|\n" +
                                 "                                      \n" +
                                 "                                      ");
-                        geld = geld - 0.80;
+                        geld = geld - 0.85;
                     } else {
                         geenGeld();
                     }
 
 
                 } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("gezond")))) {
-                    if (geld >= 1.40) {
+                    if (geld >= 1.4) {
                         System.out.println("   _____                        _                              _   _           \n" +
                                 "  / ____|                      | |                            | | (_)          \n" +
                                 " | (___  _ __   ___   ___ _ __ | |_ ___  _ __ ___   __ _  __ _| |_ _  ___  ___ \n" +
@@ -143,13 +143,13 @@ public class Main {
                                 " |_____/|_| |_|\\___/ \\___| .__/ \\__\\___/|_| |_| |_|\\__,_|\\__,_|\\__| |\\___||___/\n" +
                                 "                         | |                                     _/ |          \n" +
                                 "                         |_|                                    |__/           ");
-                        geld = geld - 1.40;
+                        geld = geld - 1.4;
                     } else {
                         geenGeld();
                     }
 
                 } else if (vendingAntwoorden[1].equals("koud") && (vendingAntwoorden[2].equals("hartig") && (vendingAntwoorden[3].equals("ongezond")))) {
-                    if (geld >= 0.90) {
+                    if (geld >= 0.9) {
                         System.out.println("  ______     _    _    _         _____ _     _           \n" +
                                 " |___  /    | |  | |  (_)       / ____| |   (_)          \n" +
                                 "    / / __ _| | _| | ___  ___  | |    | |__  _ _ __  ___ \n" +
@@ -158,7 +158,7 @@ public class Main {
                                 " /_____\\__,_|_|\\_\\_|\\_\\_|\\___|  \\_____|_| |_|_| .__/|___/\n" +
                                 "                                              | |        \n" +
                                 "                                              |_|        ");
-                        geld = geld - 0.90;
+                        geld = geld - 0.9;
                     } else {
                         geenGeld();
                     }
@@ -185,7 +185,7 @@ public class Main {
                         vendingAntwoorden[5] = scan.next();
 
                         if (vendingAntwoorden[5].equals("met")){
-                            if (geld >= 4.50) {
+                            if (geld >= 4.5) {
                                 System.out.println("  _____      _          _                  __  __          \n" +
                                         " |_   _|    (_)        | |                / _|/ _|         \n" +
                                         "   | |  _ __ _ ___  ___| |__     ___ ___ | |_| |_ ___  ___ \n" +
@@ -194,7 +194,7 @@ public class Main {
                                         " |_____|_|  |_|___/\\___|_| |_|  \\___\\___/|_| |_| \\___|\\___|\n" +
                                         "                                                           \n" +
                                         "                                                           ");
-                                geld = geld - 4.50;
+                                geld = geld - 4.5;
                             }else{
                                 geenGeld();
                             }
