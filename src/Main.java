@@ -186,7 +186,14 @@ public class Main {
 
                         if (vendingAntwoorden[5].equals("met")){
                             if (geld >= 4.50) {
-                                System.out.println("");
+                                System.out.println("  _____      _          _                  __  __          \n" +
+                                        " |_   _|    (_)        | |                / _|/ _|         \n" +
+                                        "   | |  _ __ _ ___  ___| |__     ___ ___ | |_| |_ ___  ___ \n" +
+                                        "   | | | '__| / __|/ __| '_ \\   / __/ _ \\|  _|  _/ _ \\/ _ \\\n" +
+                                        "  _| |_| |  | \\__ \\ (__| | | | | (_| (_) | | | ||  __/  __/\n" +
+                                        " |_____|_|  |_|___/\\___|_| |_|  \\___\\___/|_| |_| \\___|\\___|\n" +
+                                        "                                                           \n" +
+                                        "                                                           ");
                                 geld = geld - 4.50;
                             }else{
                                 geenGeld();
@@ -194,7 +201,14 @@ public class Main {
 
                         }else if (vendingAntwoorden[5].equals("zonder")){
                             if (geld >= 3.25){
-                                System.out.println();
+                                System.out.println("   _____ _ _   _ _             _ _       \n" +
+                                        "  / ____| (_) (_) |           (_|_)      \n" +
+                                        " | |  __| |_   _| |____      ___ _ _ __  \n" +
+                                        " | | |_ | | | | | '_ \\ \\ /\\ / / | | '_ \\ \n" +
+                                        " | |__| | | |_| | | | \\ V  V /| | | | | |\n" +
+                                        "  \\_____|_|\\__,_|_| |_|\\_/\\_/ |_| |_| |_|\n" +
+                                        "                               _/ |      \n" +
+                                        "                              |__/       ");
                                 geld = geld - 3.25;
                             }else {
                                 geenGeld();
@@ -208,7 +222,14 @@ public class Main {
 
                         if (vendingAntwoorden[5].equals("met")){
                             if (geld >= 1) {
-                                System.out.println("");
+                                System.out.println("  _  __      __  __ _      \n" +
+                                        " | |/ /     / _|/ _(_)     \n" +
+                                        " | ' / ___ | |_| |_ _  ___ \n" +
+                                        " |  < / _ \\|  _|  _| |/ _ \\\n" +
+                                        " | . \\ (_) | | | | | |  __/\n" +
+                                        " |_|\\_\\___/|_| |_| |_|\\___|\n" +
+                                        "                           \n" +
+                                        "                           ");
                                 geld = geld - 1;
                             }else{
                                 geenGeld();
@@ -216,7 +237,14 @@ public class Main {
 
                         }else if (vendingAntwoorden[5].equals("zonder")){
                             if (geld >= 1){
-                                System.out.println();
+                                System.out.println("  _______ _               \n" +
+                                        " |__   __| |              \n" +
+                                        "    | |  | |__   ___  ___ \n" +
+                                        "    | |  | '_ \\ / _ \\/ _ \\\n" +
+                                        "    | |  | | | |  __/  __/\n" +
+                                        "    |_|  |_| |_|\\___|\\___|\n" +
+                                        "                          \n" +
+                                        "                          ");
                                 geld = geld - 1;
                             }else {
                                 geenGeld();
